@@ -1,1 +1,96 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SID3R</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <audio id="music" src="msc.mp3" autoplay loop onplaying="" style="display: none;"></audio>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <div align="center" data-aos="fade-up" class="down text-muted">
+        <div>
+            <h1 style="color: #9282ee;"><i class="fal fa-dizzy"></i></h1>
+            <p class="title"><b>Welcome to my <font style="color: #9282ee; text-transform: uppercase;">page</font></b></p>
+            <p class="nickname">SIDΣR</p>
+            <p><small>Created by <font style="color: #9282ee;">SIDΣR</font></small></p>
+            <br>
+            <p><div id="app"></div></p>
+            <br>
+            <p>
+                <div class="links">
+                    <a href="#">steam</a> ▬ <a href="#">discord</a> ▬ <a href="#">configs</a>
+                </div>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="pace.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="core.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+    <script>
+
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+
+
+    </script>
+
+<script>
+    var audio = document.getElementById("music");
+    audio.volume = 0.1;
+  </script>
+
+
+  <script>
+      var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter
+    .typeString('Hello User!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('get good')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('ur server downed')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('owning since 2016')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('NESA.PM')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('VVVVVVVVVVVVVVVVVVVVVVVVVVV')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+  </script>
+
+
+
+
+
+</body>
+</html>
