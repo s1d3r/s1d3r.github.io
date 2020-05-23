@@ -10,29 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" type="image/icon" href="favicon.ico"/>
-    <iframe src="silent.mp3" allow="autoplay" id="audio"></iframe>
-    <audio id="player" autoplay controls><source src="music/msc.mp3" type="audio/mp3"></audio>
 </head>
 
 <body>
 
-
-  <!-- Standart Audio
-
-  <audio id="music" src="music/msc.mp3" autoplay loop onplaying="" style="display: none;"></audio>
-
- -->
-
-  <!-- Fix for chrome
-
-  <iframe src="silent.mp3" allow="autoplay" id="audio"></iframe>
-  <audio id="player" autoplay controls><source src="music/msc.mp3" type="audio/mp3"></audio>
-
-
- -->
-
- <iframe src="silent.mp3" allow="autoplay" id="audio"></iframe>
- <audio id="player" autoplay controls><source src="music/msc.mp3" type="audio/mp3"></audio>
+  <iframe src="silent.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+  <audio id="player" autoplay loop>
+    <source autoplay loop src="music/msc.mp3" type="audio/mp3">
+  </audio>
 
     <div align="center" data-aos="fade-up" class="down text-muted">
         <div>
