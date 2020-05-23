@@ -7,17 +7,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="style/main.css">
+    <audio id="music" src="msc.mp3" autoplay loop onplaying="" style="display: none;"></audio>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" type="image/icon" href="favicon.ico"/>
 </head>
 
 <body>
-
-  <iframe src="silent.mp3" allow="autoplay" autoplay id="audio" style="display: none"></iframe>
-  <audio id="music" allow="autoplay" autoplay loop>
-    <source id="reee" allow="autoplay" autoplay loop src="music/msc.mp3" type="audio/mp3">
-  </audio>
 
     <div align="center" data-aos="fade-up" class="down text-muted">
         <div>
@@ -49,14 +45,11 @@
         AOS.init();
       </script>
 
+
     <script>
-
-
   $(document).ready(function(){
     $('.tooltipped').tooltip();
   });
-
-
     </script>
 
      <script language="JavaScript">
@@ -102,17 +95,19 @@
 </script>
 
 <script>
-
     document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 });
-
 </script>
 
+
+scr
+
 <script>
-    var audio = document.getElementById("reee");
+    var audio = document.getElementById("music");
     audio.volume = 0.2;
   </script>
+
 
 
   <script>
