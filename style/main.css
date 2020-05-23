@@ -17,6 +17,16 @@ body {
   font-size: 12px;
 }
 
+.play {
+  color: #9282ee;
+  font-size: 10px;
+}
+
+.play:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .down {
   margin-top: 200px;
 }
