@@ -11,8 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" type="image/icon" href="favicon.ico"/>
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+      </script>
 </head>
 <body>
+
+  <iframe src="music/bypasser.mp3" allow="autoplay" id="audio" style="display: none">
+  <audio id="player" allow="autoplay" autoplay loop>
+    <source src="music/msc.mp3" type="audio/mp3">
+  </audio>
+  </iframe>
+
 
     <div align="center" data-aos="fade-up" class="down text-muted">
         <div>
