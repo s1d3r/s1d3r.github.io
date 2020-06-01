@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'sid3rfont';
+  src: url('fonts/2.ttf');
+}
+
 body {
   background: #1b1b1b;
   color: #fff;
-
 }
