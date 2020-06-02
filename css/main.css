@@ -1,14 +1,65 @@
 @font-face {
   font-family: 'sid3rfont';
-  src: url('/fonts/2.ttf');
+  src: url('../fonts/2.ttf');
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.d-flex {
+  display: flex !important;
 }
 
 body {
-  background: #1b1b1b;
+  background: #1b1b1b !important;
   color: #fff;
+  user-select: none;
 }
 
 
 .title {
+  top: 40%;
+  position: absolute;
   font-family: 'sid3rfont';
+  font-size: 65px;
+  font-weight: normal;
+  font-style: normal;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
 }
