@@ -50,6 +50,11 @@ span {
   animation: colorRotate 6s linear 0s infinite;
 }
 
+.crew {
+  position: absolute;
+  margin-top: 7%;
+}
+
 .crewgang a{
   margin-top: 5px;
   color: #4298df;
