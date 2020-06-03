@@ -10,6 +10,15 @@ body, html {
   overflow: hidden;
 }
 
+.icon {
+  color: #858585;
+  transition: 0.2s all ease;
+}
+
+.icon:hover {
+  color: var(--icon-color);
+}
+
 .align-items-center {
   align-items: center !important;
 }
@@ -64,12 +73,10 @@ span {
 .links {
   top: 55%;
   position: absolute;
-  color: #ffffff;
   font-size: 25px;
 }
 
 .links a {
-  color: #ffffff;
   margin-left: 10px;
   margin-right: 10px;
   transition: 0.2s all ease

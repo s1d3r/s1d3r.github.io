@@ -17,7 +17,11 @@
     <h3 class="title">SID3R</h3><br>
     <small class="title stayhome">#stayhome</small>
       <div class="links">
-        <i class="fas fa-chevron-right rainbow"></i> <a target="_blank" href="https://steamcommunity.com/id/sliderinoyesme/"><i class="fab fa-steam"></i></a> <a target="_blank" href="https://discord.gg/9GWBuPU"><i class="fab fa-discord"></i></a> <a target="_blank" href="https://vk.com/side1337"><i  class="fab fa-vk"></i></a> <i class="fas fa-chevron-left rainbow"></i>
+        <i class="fas fa-chevron-right rainbow"></i>
+        <a style="--icon-color: #525E54;" target="_blank" href="https://steamcommunity.com/id/sliderinoyesme/"><i class="icon fab fa-steam"></i></a>
+        <a style="--icon-color: #7289da;" target="_blank" href="https://discord.gg/9GWBuPU"><i class="icon fab fa-discord"></i></a>
+        <a style="--icon-color: #4c75a3;" target="_blank" href="https://vk.com/side1337"><i class="icon fab fa-vk"></i></a>
+        <i class="fas fa-chevron-left rainbow"></i>
       </div>
       <span class="crew" align="center" style="text-align: center">
         <p><small>CREW</small></p>
@@ -88,6 +92,32 @@
 //edit: removed ";" from last "}" because of javascript error
 </script>
 
+<script type="text/javascript">
+
+
+$(function() {
+var title = document.title,
+  animSeq = ["/", "-", "\\", "|", "-"],
+  animIndex = 0,
+  titleIndex = 0;
+
+function doInverseSpinZeroPitch() {
+  var loadTitle = title.substring(0, titleIndex);
+  if(titleIndex > title.length) {
+    animIndex = 0;
+    titleIndex = 0
+  }
+  if(animIndex > 3) {
+    titleIndex++;
+    animIndex = 0
+  }
+  document.title = loadTitle + animSeq[animIndex];
+  animIndex++
+}
+window.setInterval(doInverseSpinZeroPitch, 150);
+});
+
+</script>
 
 </body>
 </html>
