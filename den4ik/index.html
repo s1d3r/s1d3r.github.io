@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <audio id="audio" src="byrd.mp3" type="audio/mp3" autoplay loop></audio>
+  <audio id="audio" src="byrd.mp3" type="audio/mp3" loop></audio>
 
   <div class="overlay">
     <div class="center">
@@ -30,35 +30,18 @@
 
   <script type="text/javascript">
 
-  var rythm;
   var initialized = false;
 
-  var init_rythm = () => {
-    rythm = new Rythm();
-    rythm.addRythm('logo-bass', 'pulse', 0, 7);
-    rythm.addRythm('fontColor2', 'color', 0, 10, {
-      from: [255,255,255],
-      to: [202,97,245]
-    });
-  };
+    $('.overlay').click(function() {
+      $('.overlay').addClass('hidden');
+    })
 
-  audio.volume = 0.2;
-  var play = () => {
-    if (initialized)
-    return;
-    audio.play().then(() => {
-      init_rythm();
-      rythm.connectExternalAudioElement(audio);
-      rythm.start();
-      $(".overlay").addClass("hidden");
+    $('.overaly').click(function() {
+      audio.volume = 0.2;
+      var audio = $('#audio')[0];
+      audio.play();
       initialized = true;
-    });
-  };
-  play();
-
-  window.onclick = () => {
-    play();
-  }
+    })
 
   </script>
 
