@@ -19,7 +19,7 @@
   </div>
 
   <div class="main center">
-    <div style="font-size: 40px" class="rythm-high">
+    <div style="font-size: 40px" class="logo-bass">
         <span>SID3R</span>
     </div>
   </div>
@@ -30,9 +30,13 @@
 
   <script type="text/javascript">
 
-  audio.volume = 0.2;
   $(".overlay").click(function() {
     $(".overlay").addClass("hidden")
+  });
+
+  $(".overlay").click(function() {
+    var audio = $("#audio")[0];
+    audio.play();
   });
 
   </script>
