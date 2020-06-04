@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JQuery Testing :)</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <audio id="audio" src="byrd.mp3" type="audio/mp3" autoplay loop></audio>
+
+  <div class="overlay">
+    <div class="center">
+      click anywhere to enter
+    </div>
+  </div>
+
+  <div class="main center">
+    <div style="font-size: 40px" class="logo-blur logo-bass">
+        <span class="logo-neon">SID3R</span>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rythm.js/2.2.5/rythm.min.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    var rythm;
+    var initialized = false;
+
+    var init_rythm = () => {
+      rythm = new Rythm();
+      rythm.addRythm('logo-bass', 'pulse', 0, 7);
+      rythm.addRythm('logo-neon', 'textNeon', 80, 150, {
+        to: [77,0,60],
+        from: [138,0,108]
+      });
+
+      rythm.addRythm('logo-blur', 'blur', 80, 150, {
+        min: 0,
+        max: 4
+      });
+    };
+    audio.volume = 0.2;
+    var play = () => {
+      if (initialized)
+      return;
+      audio.play().then(() => {
+        init_rythm();
+        rythm.connectExternalAudioElement(audio);
+        rythm.start();
+        $(".overlay").addClass("hidden");
+        initialized = true;
+      });
+    };
+    play();
+
+    window.onclick = () => {
+      play();
+    }
+
+  </script>
+
+</body>
+</html>
