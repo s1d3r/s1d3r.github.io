@@ -30,17 +30,15 @@
 
   <script type="text/javascript">
 
-  var initialized = false;
+  audio.volume = 0.2;
 
     $('.overlay').click(function() {
       $('.overlay').addClass('hidden');
     })
 
     $('.overaly').click(function() {
-      audio.volume = 0.2;
       var audio = $('#audio')[0];
       audio.play();
-      initialized = true;
     })
 
   </script>
