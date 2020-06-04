@@ -36,6 +36,10 @@
   var init_rythm = () => {
     rythm = new Rythm();
     rythm.addRythm('logo-bass', 'pulse', 0, 7);
+    rythm.addRythm('logo-color', 'color', 0, 10, {
+      from: [255,255,255],
+      to: [202,97,245]
+    });
   };
 
   audio.volume = 0.2;
