@@ -30,6 +30,9 @@
 
   <script type="text/javascript">
 
+  var rythm = new Rythm()
+
+
   audio.volume = 0.2;
 
   $(".overlay").click(function() {
@@ -37,8 +40,8 @@
   });
 
   $(".overlay").click(function() {
-    var audio = $("#audio")[0];
-    audio.play();
+    rythm.setMusic('byrd.mp3')
+    rythm.start()
   });
 
   </script>
