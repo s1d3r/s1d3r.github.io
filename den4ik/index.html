@@ -19,8 +19,8 @@
   </div>
 
   <div class="main center">
-    <div style="font-size: 40px" class="logo-blur logo-bass">
-        <span class="logo-neon">SID3R</span>
+    <div style="font-size: 40px" class="logo-bass">
+        <span>SID3R</span>
     </div>
   </div>
 
@@ -35,15 +35,8 @@
     var init_rythm = () => {
       rythm = new Rythm();
       rythm.addRythm('logo-bass', 'pulse', 0, 7);
-      rythm.addRythm('logo-neon', 'textNeon', 80, 150, {
-        to: [77,0,60],
-        from: [138,0,108]
-      });
-
-      rythm.addRythm('logo-blur', 'blur', 80, 150, {
-        min: 0,
-        max: 4
-      });
+      rythm.addRythm('logo-neon', 'textNeon', 80, 150,
+      );
     };
     audio.volume = 0.2;
     var play = () => {
@@ -59,9 +52,6 @@
     };
     play();
 
-    window.onclick = () => {
-      play();
-    }
 
   </script>
 
