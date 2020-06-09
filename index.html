@@ -5,126 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SID3R</title>
-  <link rel="stylesheet" href="css/main.css">
+  <audio id="audio" loop src="kek.mp3"></audio>
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
 
-  <div id="particles-js"></div>
-  <div class="d-flex justify-content-center align-items-center">
-    <h3 class="title">SID3R</h3><br>
-    <small class="title stayhome">#stayhome</small>
-      <div class="links">
-        <i class="fas fa-chevron-right rainbow"></i>
-        <a title="My Steam Profile" style="--icon-color: #4c75a3;" target="_blank" href="https://steamcommunity.com/id/sliderinoyesme/"><i class="icon fab fa-steam"></i></a>
-        <a title="The best Discord Server" style="--icon-color: #7289da;" target="_blank" href="https://discord.gg/9GWBuPU"><i class="icon fab fa-discord"></i></a>
-        <a title="My VK" style="--icon-color: #4c75a3;" target="_blank" href="https://vk.com/side1337"><i class="icon fab fa-vk"></i></a>
-        <a title="Cool Website" style="--icon-color: #ab2541;" target="_blank" href="https://v0rtex.space/"><i class="icon fal fa-globe"></i></a>
-        <a title="Donate me pls :(" style="--icon-color: #2280f0;" target="_blank" href="https://www.paypal.me/SID3RR"><i class="icon fab fa-paypal"></i></a>
-        <i class="fas fa-chevron-left rainbow"></i>
-      </div>
-      <div class="crewmenu">
-        <span class="crew" align="center" style="text-align: center">
-          <br>
-          <p><small>CREW</small></p>
-            <span class="crewgang">
-              <small><a target="_blank" href="https://steamcommunity.com/id/33778899">DEN4IK</a></small>
-              <br>
-              <small><a target="_blank" href="https://steamcommunity.com/id/ParrotRoot">L4ZYY</a></small>
-              <br>
-              <small><a href="">DRAXE</a></small>
-              <br>
-              <small><a target="_blank" href="https://steamcommunity.com/id/Zavta">ZAVTA</a></small>
-              <br>
-              <small><a target="_blank" href="https://steamcommunity.com/id/kamanusicek">NUTTELA</a></small>
-              <br>
-              <small><a href="#">420LIAMA</a></small>
-              <br>
-              <br>
-            </span>
-        </span>
-      </div>
+
+  <div class="content center">
+    <p style="font-size: 13px;"> > website in redesign < </p>
+    <p style="color: gray; font-size: 12px;">by SID3R</p>
+  </div>
+  
+  <div class="overlay">
+    <div class="center">
+      Press To Start
+    </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+  <script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script src="js/pace.min.js" charset="utf-8"></script>
-  <script src="particles.js"></script>
-  <script src="js/app.js" charset="utf-8"></script>
+    $('.overlay').click(function() {
+      $('.overlay').addClass('hidden');
+    })
 
-  <script language="JavaScript">
+    $('.overlay').click(function() {
+      var audio = $('#audio')[0];
+      audio.play();
+    })
 
-  window.onload = function () {
-      document.addEventListener("contextmenu", function (e) {
-          e.preventDefault();
-      }, false);
-      document.addEventListener("keydown", function (e) {
-          //document.onkeydown = function(e) {
-          // "I" key
-          if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-              disabledEvent(e);
-          }
-          // "J" key
-          if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-              disabledEvent(e);
-          }
-          // "S" key + macOS
-          if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-              disabledEvent(e);
-          }
-          // "U" key
-          if (e.ctrlKey && e.keyCode == 85) {
-              disabledEvent(e);
-          }
-          // "F12" key
-          if (event.keyCode == 123) {
-              disabledEvent(e);
-          }
-      }, false);
-      function disabledEvent(e) {
-          if (e.stopPropagation) {
-              e.stopPropagation();
-          } else if (window.event) {
-              window.event.cancelBubble = true;
-          }
-          e.preventDefault();
-          return false;
-      }
-  }
-//edit: removed ";" from last "}" because of javascript error
-</script>
-
-<script type="text/javascript">
-
-
-$(function() {
-var title = document.title,
-  animSeq = ["/", "-", "\\", "|", "-"],
-  animIndex = 0,
-  titleIndex = 0;
-
-function doInverseSpinZeroPitch() {
-  var loadTitle = title.substring(0, titleIndex);
-  if(titleIndex > title.length) {
-    animIndex = 0;
-    titleIndex = 0
-  }
-  if(animIndex > 3) {
-    titleIndex++;
-    animIndex = 0
-  }
-  document.title = loadTitle + animSeq[animIndex];
-  animIndex++
-}
-window.setInterval(doInverseSpinZeroPitch, 150);
-});
-
-</script>
+  </script>
 
 </body>
 </html>
