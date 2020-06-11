@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SID3R</title>
   <audio id="audio" loop src="kek.mp3"></audio>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
 
 
-  <div class="content center">
-    <p style="font-size: 13px;">> website in redesign <</p>
-    <p id="timer"></p>
-    <p style="color: gray; font-size: 12px;">by SID3R</p>
+  <div align="center" class="container sider2020">
+    <p></p>
+    <p>SID3R</p>
+    <p><small>#stayhome</small></p>
+    <p><a target="_blank" href="https://steamcommunity.com/id/sliderinoyesme/"><button type="button" class="btn btn-sm btn-outline-danger">Steam Profile</button></a></p>
+    <p><a target="_blank" href="https://discord.gg/JCSb4gR"><button type="button" class="btn btn-sm btn-outline-danger">Discord Server</button></a></p>
+    <p><a target="_blank" href="https://v0rtex.space/"><button type="button" class="btn btn-sm btn-outline-danger">V0RTEX.SPACE</button></a></p>
   </div>
   
   <div class="overlay">
     <div class="center">
-      Press To Start
+      Press anywhere to start...
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <script>
 
@@ -40,29 +47,6 @@
 
   </script>
 
-<script>
-  var countDownDate = new Date("Jun 13, 2020 15:37:25").getTime();
-  
-  var x = setInterval(function() {
-  
-    var now = new Date().getTime();
-  
-    var distance = countDownDate - now;
-  
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-  
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("timer").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-  </script>
 
 </body>
 </html>
