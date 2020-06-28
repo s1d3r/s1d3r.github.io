@@ -1,0 +1,44 @@
+body {
+    background-color: #1b1b1b;
+    color: #aaa;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+
+body a {
+    color: #aaa;
+    text-decoration: none;
+    transition: ease 0.2s all;
+}
+
+body a:hover {
+    transition: ease 0.2s all;
+    color: #9183f0;
+}
+
+
+.overlay {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #1b1b1b;
+    z-index: 1;
+  }
+  
+  .overlay.hidden {
+    display: none;
+  }
+
+
+.main {
+    text-align: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
