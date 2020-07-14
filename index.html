@@ -1,9 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content = "0; url=https://www.pornhub.net/"/>
-  <title>SID3R</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SID3R</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <audio id="audio" src="usandthem.mp3" type="audio/mp3" loop></audio>
+    
 </head>
+<body class="body">
+
+    <div class="overlay">
+        <div class="center">
+          click anywhere to enter
+        </div>
+      </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large purple">
+            <i class="far fa-ellipsis-v"></i>
+        </a>
+        <ul>
+          <li><a href="soiderbird/index.html" target="_blank" class="btn-floating purple tooltipped" data-position="left" data-tooltip="siderbird"><i class="fas fa-gamepad"></i></a></li>
+        </ul>
+      </div>
+    
+      
+      <div id="main" style="margin-top: 15vh;" align="center" class="content">
+          <br>
+          <br>
+             <img src="avatar.jpg" class="circle" height="130" width="130">
+          <br>
+          <br>
+             <span>Welcome to my Page</span>
+             <p><a class="grey-text" id="app"></a></p>
+          <br>
+             <a href="https://steamcommunity.com/id/hentaiwareuserstfu" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">Steam Profile</a>
+            <a href="https://discord.gg/JCSb4gR" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">Discord Group</a>
+          <br>
+          <br>
+            <a href="https://steamcommunity.com/profiles/76561198929222141" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">Steam Profile (SMURF)</a>
+            <a href="https://verm.pw/forum" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">⭐ VERM.PW FORUM ⭐</a>
+      </div>
+
+      <div style="color: grey" align="center" class="music">
+          <p>
+              <small>Music: Derek Pope - Us and Them</small><br>
+          </p>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        audio.volume = 0.4;
+      
+          $('.overlay').click(function() {
+            $('.overlay').addClass('hidden');
+          })
+      
+          $('.overlay').click(function() {
+            var audio = $('#audio')[0];
+            audio.play();
+          })
+      
+        </script>
+
+    <script>
+
+          $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+    loop: true
+    });
+
+    typewriter
+    .typeString('stop using inferior cheats')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('home of the catjpg')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('get good')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('enraged?')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('owning since 2018')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('vvvvvvvvvvvvvvvvvvvvvvv')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+    </script>
+
+</body>
 </html>
