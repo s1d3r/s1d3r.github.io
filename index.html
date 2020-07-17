@@ -3,110 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SID3R</title>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <audio id="audio" src="RØNIN.mp3" loop></audio>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-    <audio id="audio" src="usandthem.mp3" type="audio/mp3" loop></audio>
-    
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>soider</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body class="body">
+<body>
 
-    <div class="overlay">
-        <div class="center">
-          click anywhere to enter
+
+    <div class="main">
+        <div class="menu">
+            <p><img class="circle z-depth-3" src="avatar.jpg" height="132" width="132"></p>
+            <p><small>Welcome to my page</small></p>
+            <p><small><a style="color: #808080;" id="app"></a></small></p>
+            <br>
+            <p class="btns"><a href="https://steamcommunity.com/id/hentaiwareuserstfu" target="_blank"><button class="btn2020">STEAM</button></a> <a href="https://discord.gg/JCSb4gR" target="_blank"><button class="btn2020">DISCORD</button></a></p>
         </div>
-      </div>
-
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large pulse purple">
-            <i class="far fa-ellipsis-v"></i>
-        </a>
-        <ul>
-          <li><a href="soiderbird/index.html" target="_blank" class="btn-floating purple  tooltipped" data-position="left" data-tooltip="siderbird"><i class="fas fa-gamepad"></i></a></li>
-        </ul>
-      </div>
-    
-      
-      <div id="main" style="margin-top: 15vh;" align="center" class="content">
-          <br>
-          <br>
-             <img src="avatar.jpg" class="circle z-depth-3" height="130" width="130">
-          <br>
-          <br>
-             <span>Welcome to my Page</span>
-             <p><a class="grey-text" id="app"></a></p>
-          <br>
-             <a href="https://steamcommunity.com/id/hentaiwareuserstfu" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">Steam Profile</a>
-            <a href="https://discord.gg/JCSb4gR" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">💜 Discord Group 💜</a>
-          <br>
-          <br>
-            <a href="https://steamcommunity.com/profiles/76561198929222141" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">Steam Profile (SMURF)</a>
-            <a href="https://verm.pw/forum" target="_blank" style="width: 18%;" class="waves-effect purple light-text btn-small waves-dark btn">⭐ VERM.PW FORUM ⭐</a>
-      </div>
-
-      <div style="color: grey" align="center" class="music">
-          <p>
-              <small>Music: Derek Pope - Us and Them</small><br>
-          </p>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </div>
 
 
-    <script type="text/javascript">
-
-        audio.volume = 0.4;
-      
-          $('.overlay').click(function() {
-            $('.overlay').addClass('hidden');
-          })
-      
-          $('.overlay').click(function() {
-            var audio = $('#audio')[0];
-            audio.play();
-          })
-      
-        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script>
+        $(document).ready(function() {
+    $("#audio").get(0).play();
+});
 
-          $(document).ready(function(){
-    $('.fixed-action-btn').floatingActionButton();
-  });
+audio.volume = 0.4;
 
-  $(document).ready(function(){
-    $('.tooltipped').tooltip();
-  });
+var app = document.getElementById('app');
 
-    var app = document.getElementById('app');
+var typewriter = new Typewriter(app, {
+loop: true
+});
 
-    var typewriter = new Typewriter(app, {
-    loop: true
-    });
-
-    typewriter
-    .typeString('stop using inferior cheats')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('home of the catjpg')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('get good')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('enraged?')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('owning since 2018')
-    .pauseFor(2500)
-    .deleteAll()
-    .typeString('vvvvvvvvvvvvvvvvvvvvvvv')
-    .pauseFor(2500)
-    .deleteAll()
-    .start();
+typewriter
+.typeString('stop using inferior cheats')
+.pauseFor(2500)
+.deleteAll()
+.typeString('home of the catjpg')
+.pauseFor(2500)
+.deleteAll()
+.typeString('get good')
+.pauseFor(2500)
+.deleteAll()
+.typeString('enraged?')
+.pauseFor(2500)
+.deleteAll()
+.typeString('owning since 2018')
+.pauseFor(2500)
+.deleteAll()
+.typeString('vvvvvvvvvvvvvvvvvvvvvvv')
+.pauseFor(2500)
+.deleteAll()
+.start();
     </script>
+
 
 </body>
 </html>
