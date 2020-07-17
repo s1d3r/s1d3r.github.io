@@ -11,6 +11,11 @@
 </head>
 <body>
 
+    <div class="overlay">
+        <div class="center">
+          Press To Enter
+        </div>
+      </div>
 
     <div class="main">
         <div class="menu">
@@ -19,47 +24,57 @@
             <p><small><a style="color: #808080;" id="app"></a></small></p>
             <br>
             <p class="btns"><a href="https://steamcommunity.com/id/hentaiwareuserstfu" target="_blank"><button class="btn2020">STEAM</button></a> <a href="https://discord.gg/JCSb4gR" target="_blank"><button class="btn2020">DISCORD</button></a></p>
+            <p>Discord: soider#1846</p>
         </div>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+    <script type="text/javascript">
+
+        audio.volume = 0.4;
+
+          $('.overlay').click(function() {
+            $('.overlay').addClass('hidden');
+          })
+
+          $('.overlay').click(function() {
+            var audio = $('#audio')[0];
+            audio.play();
+            console.log("Music Loaded.")
+          })
+
+        </script>
+
     <script>
-        $(document).ready(function() {
-    $("#audio").get(0).play();
-});
+    var app = document.getElementById('app');
 
-audio.volume = 0.4;
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
 
-var app = document.getElementById('app');
-
-var typewriter = new Typewriter(app, {
-loop: true
-});
-
-typewriter
-.typeString('stop using inferior cheats')
-.pauseFor(2500)
-.deleteAll()
-.typeString('home of the catjpg')
-.pauseFor(2500)
-.deleteAll()
-.typeString('get good')
-.pauseFor(2500)
-.deleteAll()
-.typeString('enraged?')
-.pauseFor(2500)
-.deleteAll()
-.typeString('owning since 2018')
-.pauseFor(2500)
-.deleteAll()
-.typeString('vvvvvvvvvvvvvvvvvvvvvvv')
-.pauseFor(2500)
-.deleteAll()
-.start();
+    typewriter
+        .typeString('stop using inferior cheats')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('home of the catjpg')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('get good')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('enraged?')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('owning since 2018')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('vvvvvvvvvvvvvvvvvvvvvvv')
+        .pauseFor(2500)
+        .deleteAll()
+        .start();
     </script>
-
 
 </body>
 </html>
