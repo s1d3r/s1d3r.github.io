@@ -8,6 +8,11 @@ tippy('#discord', {
     trigger: 'click',
 });
 
+tippy('#telegram', {
+    content: 'Telegram',
+    animation: 'scale',
+})
+
 $('#music').prop("volume", 0.5);
 
 
