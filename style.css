@@ -9,10 +9,19 @@ body {
 .main {
     font-size: 12px;
     position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
+    transform: translate(-50%, -50%);
+    top: 30%;
     text-align: center;
     left: 50%;
+}
+
+.list {
+    font-size: 12px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    text-align: center;
 }
 
 .main .head-text,.link {
