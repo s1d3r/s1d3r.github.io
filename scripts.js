@@ -19,7 +19,7 @@ $('#music').prop("volume", 0.5);
 
 function AdvancedCopy(){
     
-var theText = 'ソイダー#1846';
+var theText = 'soider#6666';
 
 var hiddenCopy = document.createElement('div');
     hiddenCopy.innerHTML = theText;
