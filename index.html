@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+    <div id="overlay">
+        <div class="centered">Press to Play</div>
+    </div>
+
+    <div id="background" class="background">
+        <video id="exp" loop src="/assets/bg/webm.mp4"></video>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $("#overlay").click(function() {
+            $("#overlay").addClass("hidden")
+        });
+
+        $("#overlay").click(function() {
+            var video = $("#exp")[0];
+            video.play();
+        });
+
+        $('#exp').prop("volume", 0.3);
+    </script>
+    
+</body>
+</html>
